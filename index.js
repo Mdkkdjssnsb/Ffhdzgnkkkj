@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const app = express();
 
-app.get("/gpt", async (req, res) => {
+app.get("openai/gpt", async (req, res) => {
   try {
     const { prompt } = req.query;
 
